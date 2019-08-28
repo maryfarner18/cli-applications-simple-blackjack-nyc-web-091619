@@ -59,7 +59,7 @@ def runner
   
   until total > 21 do
     new_total = hit?(total)
-    if new_total != total then
+    if new_total > total then
       display_card_total(total)
     end
     total = new_total
