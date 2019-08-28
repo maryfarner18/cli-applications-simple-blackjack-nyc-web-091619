@@ -58,8 +58,10 @@ def runner
   total = initial_round
   
   until total > 21 do
+    puts "hi"
     new_total = hit?(total)
     if new_total > total then
+      puts "we hit!"
       display_card_total(total)
     end
     total = new_total
